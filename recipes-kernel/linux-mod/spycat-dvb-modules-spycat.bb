@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 COMPATIBLE_MACHINE = "spycat"
 
 KV = "4.6.0"
-SRCDATE = "20160613"
+SRCDATE = "20160621"
 
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
@@ -42,5 +42,5 @@ do_install() {
 	echo mn88472 >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }
 
-SRC_URI[md5sum] = "cc7d6ed84e078295dc0c0b6ce391e480"
-SRC_URI[sha256sum] = "1346c01788bb4a27453058dda58b3f2016e35dd3b7ee6751a17047e11633cb49"
+SRC_URI[md5sum] = "65a3bc64ef0eb3bcaa1eca664949405c"
+SRC_URI[sha256sum] = "765e3f35ed1f5276a8a16b89cf90b7f1e42963fdf7283f8ef580e097d9b45fdf"
