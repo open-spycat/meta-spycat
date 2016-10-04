@@ -2,7 +2,7 @@ DESCRIPTION = "Linux kernel for ${MACHINE}"
 SECTION = "kernel"
 LICENSE = "GPLv2"
 
-COMPATIBLE_MACHINE = "spycat|spycatmini"
+COMPATIBLE_MACHINE = "spycat|spycatmini|spycatminiplus"
 
 SRC_URI[md5sum] = "7e587a697fe29ad2c65432bcdc182a89"
 SRC_URI[sha256sum] = "dafc36001eee2ce18876238a0ddb47c569aa6a5e616ecc573cf4d1c5039f8a6a"
