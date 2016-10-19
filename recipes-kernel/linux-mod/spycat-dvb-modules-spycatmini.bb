@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 COMPATIBLE_MACHINE = "spycatmini"
 
 KV = "4.8.0"
-SRCDATE = "20161018"
+SRCDATE = "20161019"
 
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
@@ -38,5 +38,5 @@ do_install() {
 	echo sp988x >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }
 
-SRC_URI[md5sum] = "bedfa7a7adda85d85f310e990bcd7814"
-SRC_URI[sha256sum] = "f27188f6ee3f8a2f7c973521db75f35fc68704c746fe44fed1c96153b0a85210"
+SRC_URI[md5sum] = "d12374fb0a47c04678de50c655cc962d"
+SRC_URI[sha256sum] = "5f486f8e67e6a9b54b9d4f55556be4e836bf497834535cfc90a963f7d9610f76"

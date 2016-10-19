@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 COMPATIBLE_MACHINE = "spycatmini"
 
 KV = "4.8.0"
-SRCDATE = "20161018"
+SRCDATE = "20161019"
 
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
@@ -40,5 +40,5 @@ do_install() {
 	echo ftm4862 >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }
 
-SRC_URI[md5sum] = "4b6cca89aec7dd3790dcd2685abc7a30"
-SRC_URI[sha256sum] = "f4f84c8e14ab97033c28babab7f1c7594bd0277526105463a45da12af94eef97"
+SRC_URI[md5sum] = "543c60ac28d8ca4e3c4288e92ce4cb2b"
+SRC_URI[sha256sum] = "cf51f703defc4241b6b415b2afccb8d39e4552b6b8f0a1e2411a4e6f121ee077"
