@@ -6,14 +6,14 @@ LICENSE = "CLOSED"
 COMPATIBLE_MACHINE = "spycat"
 
 KV = "4.8.0"
-SRCDATE = "20161019"
+SRCDATE = "20161122"
 
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
 
 RDEPENDS_${PN} += "spycat-firmware-mn8847x"
 
-SRC_URI = "https://github.com/open-spycat/spycat-dvb-modules-${MACHINE}/raw/master/linux-${KV}-${MACHINE}-${SRCDATE}.tar.gz"
+SRC_URI = "https://github.com/open-spycat/spycat-dvb-modules/raw/master/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
@@ -28,11 +28,11 @@ do_compile() {
 
 do_install() {
 	install -d ${D}${base_libdir}/modules/${KV}/extra
-	install -m 0644 ${S}/lib/modules/${KV}/extra/brcmstb-spycat.ko ${D}${base_libdir}/modules/${KV}/extra
-	install -m 0644 ${S}/lib/modules/${KV}/extra/ci.ko ${D}${base_libdir}/modules/${KV}/extra
-	install -m 0644 ${S}/lib/modules/${KV}/extra/fts260.ko ${D}${base_libdir}/modules/${KV}/extra
-	install -m 0644 ${S}/lib/modules/${KV}/extra/sp988x.ko ${D}${base_libdir}/modules/${KV}/extra
-	install -m 0644 ${S}/lib/modules/${KV}/extra/sp968x.ko ${D}${base_libdir}/modules/${KV}/extra
+	install -m 0644 ${S}/brcmstb-spycat.ko ${D}${base_libdir}/modules/${KV}/extra
+	install -m 0644 ${S}/ci.ko ${D}${base_libdir}/modules/${KV}/extra
+	install -m 0644 ${S}/fts260.ko ${D}${base_libdir}/modules/${KV}/extra
+	install -m 0644 ${S}/sp988x.ko ${D}${base_libdir}/modules/${KV}/extra
+	install -m 0644 ${S}/sp968x.ko ${D}${base_libdir}/modules/${KV}/extra
 
 	install -d ${D}${sysconfdir}/modules-load.d
 	echo brcmstb-spycat >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
@@ -42,5 +42,5 @@ do_install() {
 	echo sp968x >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }
 
-SRC_URI[md5sum] = "b44399037f3a7d709d2f6db1e1ea604a"
-SRC_URI[sha256sum] = "892aa6fddaa1654565848b2c22d98da9919e0b830859e4face2a44b16415830f"
+SRC_URI[md5sum] = "c941a0667359ced7b54fd39511277943"
+SRC_URI[sha256sum] = "8b577018237e22d502f089a483b27fbc142b42569c9eb98fa4c6ddff9e7bb9a1"
