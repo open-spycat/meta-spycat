@@ -1,4 +1,4 @@
 TARGET_ARCH = "arm"
-DEFAULTTUNE = "cortexa15hf-neon"
+DEFAULTTUNE = "armv7ahf-neon"
 
-require conf/machine/include/tune-cortexa15.inc
+require conf/machine/include/arm/arch-armv7a.inc
