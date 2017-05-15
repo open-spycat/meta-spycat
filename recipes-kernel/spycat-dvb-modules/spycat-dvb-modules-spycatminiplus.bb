@@ -1,4 +1,4 @@
-KV = "4.10.0"
+KV = "4.11.0"
 SRCDATE = "20170515"
 MODNAMES = "brcmstb-${MACHINE} ci ftm4862 fts260 sp988x"
 

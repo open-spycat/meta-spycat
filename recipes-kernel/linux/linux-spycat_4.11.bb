@@ -7,7 +7,7 @@ SRC_URI = "${KERNELORG_MIRROR}/linux/kernel/v4.x/linux-${PV}.tar.xz;name=kernel 
 
 COMPATIBLE_MACHINE = "spycat|spycatmini|spycatminiplus|spycat4kmini"
 
-SRC_URI[kernel.md5sum] = "b5e7f6b9b2fe1b6cc7bc56a3a0bfc090"
-SRC_URI[kernel.sha256sum] = "3c95d9f049bd085e5c346d2c77f063b8425f191460fcd3ae9fe7e94e0477dc4b"
-SRC_URI[kernelpatch.md5sum] = "1aa65d58897b628243d2fb92e34b8f3f"
-SRC_URI[kernelpatch.sha256sum] = "8dc3289e9c832f00f89b11c71397cdfe8bff7abed11a32ae42b1bacac495b0fb"
+SRC_URI[kernel.md5sum] = "251a5deee0fa6daf3f356b1bbda9eab8"
+SRC_URI[kernel.sha256sum] = "b67ecafd0a42b3383bf4d82f0850cbff92a7e72a215a6d02f42ddbafcf42a7d6"
+SRC_URI[kernelpatch.md5sum] = "0c8fa6cf07394e6a8ac9e3495b2d43c5"
+SRC_URI[kernelpatch.sha256sum] = "f3876390e9cb3b02a0f20a374a852c2dd0a018f71887969a0fd66439a526d8e8"
