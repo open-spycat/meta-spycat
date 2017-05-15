@@ -1,10 +1,10 @@
 KV = "4.10.0"
-SRCDATE = "20170220"
+SRCDATE = "20170515"
 MODNAMES = "brcmstb-${MACHINE} ci ftm4862 fts260 sp988x"
 
 require spycat-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "spycatminiplus"
 
-SRC_URI[md5sum] = "5c594297cc2be44ec38ea2ecf5fdd4cc"
-SRC_URI[sha256sum] = "d4fdc5d231aa61e2e87ea2ba468a4aa1a6c8956002429e467aec53e483eb7fcc"
+SRC_URI[md5sum] = "b2d4d3d4915856725d5fb5b21945296b"
+SRC_URI[sha256sum] = "930ebdb3a9168baba020db91bb65fac75bffa05a272815602e3363b79ca0c305"
