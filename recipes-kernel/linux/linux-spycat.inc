@@ -21,6 +21,8 @@ B = "${WORKDIR}/build"
 
 KERNEL_IMAGEDEST = "tmp"
 
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS=-Wno-attribute-alias"
+
 FILES_kernel-image = "${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}*"
 
 pkg_postinst_kernel-image () {
